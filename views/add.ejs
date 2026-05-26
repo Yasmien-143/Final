@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Student</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Register Student</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/add">Register Student</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="form-section">
+        <h2>Add New Student</h2>
+        <% if (error) { %>
+        <div class="alert error"><%= error %></div>
+        <% } %>
+        <form action="/add" method="post">
+          <label>
+            Student ID
+            <input type="text" name="student_id" value="<%= values.student_id || '' %>" required />
+          </label>
+          <label>
+            Full Name
+            <input type="text" name="full_name" value="<%= values.full_name || '' %>" required />
+          </label>
+          <label>
+            Course
+            <input type="text" name="course" value="<%= values.course || '' %>" required />
+          </label>
+          <label>
+            Year Level
+            <input type="text" name="year_level" value="<%= values.year_level || '' %>" required />
+          </label>
+          <label>
+            Email Address
+            <input type="email" name="email" value="<%= values.email || '' %>" required />
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="button">Save Student</button>
+            <a class="button secondary" href="/">Cancel</a>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "student-information-management-system",
+  "version": "1.0.0",
+  "description": "Node.js Student Information Management System for CRUD operations with MySQL.",
+  "main": "crud_final_exam.js",
+  "scripts": {
+    "start": "node crud_final_exam.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0"
+  }
+}

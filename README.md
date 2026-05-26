@@ -52,9 +52,8 @@ The application uses a `students` table with the following columns:
 - `email` (VARCHAR(255))
 
 ## Required Links
-- GitHub Repository Link: _Add your public repository URL here_
-- Render Deployment Link: _Add your deployed app URL here_
-
+- GitHub Repository Link: https://github.com/Yasmien-143/Final.git
+- Render Deployment Link: https://final-1-w3i9.onrender.com
 ## Presentation Checklist
 - Add student record
 - Update student information
